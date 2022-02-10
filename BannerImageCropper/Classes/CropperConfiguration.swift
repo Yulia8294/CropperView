@@ -18,6 +18,16 @@ public struct BannerCropperCofiguration {
     public var dimColor: UIColor?
     public var cropAreaBorderColor: UIColor?
     public var cropAreaBorderWidth: CGFloat?
+    public var closeButtonText = "Back"
+    public var saveButtonText = "Save"
+    public var saveButtonTint: UIColor = .white
+    public var closeButtonTint: UIColor = .white
+    public var saveButtonBackground: UIColor = .blue
+    public var closeButtonBackground: UIColor = .white
+    public var cropperViewBackgroundColor: UIColor = .black
+    public var closeButtonCornerRadius: CGFloat = 0
+    public var cropButtonCornerRadius: CGFloat = 0
+    public var cropperViewCornerRadius: CGFloat = 0
     
     public init(image: UIImage) {
         self.image = image

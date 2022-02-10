@@ -3,54 +3,69 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Another View Controller-->
+        <!--Banner Cropping View Controller-->
         <scene sceneID="wbw-eL-6Ah">
             <objects>
-                <viewController id="VtQ-nL-1MS" customClass="AnotherViewController" customModule="BannerImageCropper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VtQ-nL-1MS" customClass="BannerCroppingViewController" customModule="BannerImageCropper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="476-gy-Rzl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpd-ON-Hi3">
+                                <rect key="frame" x="342" y="60" width="56" height="31"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Crop">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didPressCrop:" destination="VtQ-nL-1MS" eventType="touchUpInside" id="rtw-Pe-5YU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ff8-ET-MeY">
+                                <rect key="frame" x="16" y="60" width="61" height="31"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Close">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didPressClose:" destination="VtQ-nL-1MS" eventType="touchUpInside" id="aJv-di-aoh"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFH-cG-a5b" customClass="BannerCroppingView" customModule="BannerImageCropper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyt-tE-D9a">
-                                        <rect key="frame" x="343" y="50" width="56" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Crop"/>
-                                        <connections>
-                                            <action selector="didPressCrop:" destination="VtQ-nL-1MS" eventType="touchUpInside" id="zd7-KN-7SY"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
+                                <rect key="frame" x="0.0" y="110" width="414" height="786"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Iyt-tE-D9a" secondAttribute="trailing" constant="15" id="3s8-Bz-spf"/>
-                                    <constraint firstItem="Iyt-tE-D9a" firstAttribute="top" secondItem="KFH-cG-a5b" secondAttribute="top" constant="50" id="iXI-ZQ-xOq"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SGa-j6-YN9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="KFH-cG-a5b" secondAttribute="bottom" id="JgS-gL-uhJ"/>
-                            <constraint firstItem="KFH-cG-a5b" firstAttribute="top" secondItem="476-gy-Rzl" secondAttribute="top" id="RAM-gn-fbO"/>
+                            <constraint firstItem="Ff8-ET-MeY" firstAttribute="top" secondItem="SGa-j6-YN9" secondAttribute="top" constant="16" id="M2L-8s-EQ5"/>
+                            <constraint firstItem="KFH-cG-a5b" firstAttribute="top" secondItem="476-gy-Rzl" secondAttribute="top" constant="110" id="RAM-gn-fbO"/>
                             <constraint firstItem="SGa-j6-YN9" firstAttribute="trailing" secondItem="KFH-cG-a5b" secondAttribute="trailing" id="SBa-Aj-67G"/>
+                            <constraint firstItem="Ff8-ET-MeY" firstAttribute="leading" secondItem="SGa-j6-YN9" secondAttribute="leading" constant="16" id="SCU-dF-tSi"/>
+                            <constraint firstItem="SGa-j6-YN9" firstAttribute="trailing" secondItem="Xpd-ON-Hi3" secondAttribute="trailing" constant="16" id="Tvk-ye-BtX"/>
+                            <constraint firstItem="Xpd-ON-Hi3" firstAttribute="top" secondItem="SGa-j6-YN9" secondAttribute="top" constant="16" id="nN4-zi-azf"/>
                             <constraint firstItem="KFH-cG-a5b" firstAttribute="leading" secondItem="SGa-j6-YN9" secondAttribute="leading" id="tUJ-aT-XXh"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="testView" destination="KFH-cG-a5b" id="tNe-UW-ZFO"/>
+                        <outlet property="closeButton" destination="Ff8-ET-MeY" id="6So-n5-lqH"/>
+                        <outlet property="cropButton" destination="Xpd-ON-Hi3" id="UZK-xe-fNF"/>
+                        <outlet property="croppingView" destination="KFH-cG-a5b" id="tNe-UW-ZFO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sD7-0z-4jF" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="223" y="87"/>
+            <point key="canvasLocation" x="221.73913043478262" y="86.383928571428569"/>
         </scene>
         <!--Image Presenter-->
         <scene sceneID="2VL-kb-typ">
@@ -83,6 +98,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

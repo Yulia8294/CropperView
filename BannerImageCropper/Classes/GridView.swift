@@ -43,6 +43,7 @@ class GridView: UIView {
         secondRowLayer.path = secondRowPath.cgPath
         layer.addSublayer(secondRowLayer)
     }
+    
     private func gridLayer() -> CAShapeLayer {
         let shapeLayer = CAShapeLayer()
         shapeLayer.strokeColor = UIColor.white.cgColor

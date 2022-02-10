@@ -48,13 +48,18 @@ class BannerCroppingView: UIView {
         configure()
     }
     
-    func configure(with configuration: BannerCropperCofiguration) {
+    func configure(with configuration: BannerCropperCofiguration?) {
+        guard let configuration = configuration else {
+            return
+        }
+
         self.conifig = configuration
         bannerView.configure(with: CroppingAreaViewModel(gridColor:    configuration.gridColor,
                                                          displaysGrid: configuration.displayGrid,
                                                          borderColor:  configuration.cropAreaBorderColor,
                                                          borderWidth:  configuration.cropAreaBorderWidth))
         imageView.image = configuration.image
+        backgroundColor = configuration.cropperViewBackgroundColor
         setNeedsLayout()
         layoutIfNeeded()
     }
