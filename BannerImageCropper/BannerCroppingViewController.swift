@@ -26,7 +26,7 @@ class BannerCroppingViewController: UIViewController {
         conf.closeButtonTint = .darkGray
         conf.saveButtonBackground = .orange
         conf.cropperViewCornerRadius = 10
-        conf.cropperViewBackgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
+        conf.cropperViewBackgroundColor = UIColor.black.withAlphaComponent(0.7)
         configure(with: conf)
         
         guard let config = config else {
@@ -35,6 +35,11 @@ class BannerCroppingViewController: UIViewController {
         
         croppingView.configure(with: config)
         setupUI()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        croppingView.addMask()
     }
     
     private func setupUI() {

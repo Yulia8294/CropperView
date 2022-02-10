@@ -36,6 +36,15 @@ class BannerCroppingView: UIView {
         return banner
     }()
     
+    var dimView: UIView = {
+        let view = UIView()
+        view.clipsToBounds = true
+        view.isUserInteractionEnabled = false
+        view.alpha = 1
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     //MARK: - Init
     
     override init(frame: CGRect) {
@@ -59,6 +68,7 @@ class BannerCroppingView: UIView {
                                                          borderColor:  configuration.cropAreaBorderColor,
                                                          borderWidth:  configuration.cropAreaBorderWidth))
         imageView.image = configuration.image
+        dimView.backgroundColor = configuration.cropperViewBackgroundColor
         backgroundColor = configuration.cropperViewBackgroundColor
         setNeedsLayout()
         layoutIfNeeded()
@@ -90,6 +100,7 @@ class BannerCroppingView: UIView {
         addSubview(scrollView)
         scrollView.addSubview(imageView)
         addSubview(bannerView)
+        addSubview(dimView)
         scrollView.delegate = self
 
         scrollView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
@@ -107,10 +118,26 @@ class BannerCroppingView: UIView {
         bannerView.heightAnchor.constraint(equalToConstant: 120).isActive = true
         bannerView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         bannerView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        
+        dimView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        dimView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        dimView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        dimView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
     
     func configure() {
        constraintLayout()
+    }
+    
+    func addMask() {
+        let maskLayer = CAShapeLayer()
+        maskLayer.frame = dimView.bounds
+        maskLayer.fillRule = CAShapeLayerFillRule.evenOdd
+        
+        let path = UIBezierPath(rect: dimView.bounds)
+        path.append(UIBezierPath(rect: bannerView.frame))
+        maskLayer.path = path.cgPath
+        dimView.layer.mask = maskLayer
     }
     
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {

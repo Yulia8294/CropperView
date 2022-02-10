@@ -55,6 +55,6 @@ class CroppingAreaView: UIView {
     
     private func configure() {
         layoutGridView()
-        backgroundColor = .black.withAlphaComponent(0.4)
+        backgroundColor = .clear
     }
 }
