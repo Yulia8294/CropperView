@@ -40,7 +40,6 @@ class BannerCroppingView: UIView {
         let view = UIView()
         view.clipsToBounds = true
         view.isUserInteractionEnabled = false
-        view.alpha = 1
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -85,6 +84,7 @@ class BannerCroppingView: UIView {
         super.layoutSubviews()
         updateMinZoomScaleForSize(bounds.size)
         centerContent()
+        updateDimmingMaskFrame()
     }
     
     func updateMinZoomScaleForSize(_ size: CGSize) {
@@ -129,11 +129,10 @@ class BannerCroppingView: UIView {
        constraintLayout()
     }
     
-    func addMask() {
+    func updateDimmingMaskFrame() {
         let maskLayer = CAShapeLayer()
         maskLayer.frame = dimView.bounds
         maskLayer.fillRule = CAShapeLayerFillRule.evenOdd
-        
         let path = UIBezierPath(rect: dimView.bounds)
         path.append(UIBezierPath(rect: bannerView.frame))
         maskLayer.path = path.cgPath

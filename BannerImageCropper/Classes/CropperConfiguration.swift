@@ -8,6 +8,7 @@
 import UIKit
 
 public typealias BannerCropperCompletion = (UIImage?) -> Void
+public typealias BannerCropperDismissCompletion = () -> Void
 
 public struct BannerCropperCofiguration {
     

@@ -7,27 +7,27 @@
 
 import UIKit
 
-class BannerCroppingViewController: UIViewController {
+public class BannerCroppingViewController: UIViewController {
+    
+    static public func initialize(with configuration: BannerCropperCofiguration,
+                                  _ completion: @escaping BannerCropperCompletion,
+                                  _ onDismiss: @escaping BannerCropperDismissCompletion) -> BannerCroppingViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "BannerCroppingViewController") as! BannerCroppingViewController
+        vc.configure(with: configuration, completion, onDismiss)
+        return vc
+    }
 
     @IBOutlet weak var cropButton: UIButton!
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var croppingView: BannerCroppingView!
     
+    private var completion: BannerCropperCompletion?
+    private var dismissCompletion: BannerCropperDismissCompletion?
     private var config: BannerCropperCofiguration!
         
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
-        
-        var conf = BannerCropperCofiguration(image: UIImage(named: "test2")!)
-        conf.displayGrid = true
-        conf.gridColor = .white
-        conf.cropAreaBorderColor = .white
-        conf.cropButtonCornerRadius = 10
-        conf.closeButtonTint = .darkGray
-        conf.saveButtonBackground = .orange
-        conf.cropperViewCornerRadius = 10
-        conf.cropperViewBackgroundColor = UIColor.black.withAlphaComponent(0.7)
-        configure(with: conf)
         
         guard let config = config else {
             fatalError("Please provide configuration with image to display on cropper view")
@@ -35,11 +35,6 @@ class BannerCroppingViewController: UIViewController {
         
         croppingView.configure(with: config)
         setupUI()
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        croppingView.addMask()
     }
     
     private func setupUI() {
@@ -61,22 +56,25 @@ class BannerCroppingViewController: UIViewController {
     }
     
     @discardableResult
-    func configure(with config: BannerCropperCofiguration) -> Self {
+    func configure(with config: BannerCropperCofiguration,
+                   _ completion: @escaping BannerCropperCompletion,
+                   _ onDismiss: @escaping BannerCropperDismissCompletion) -> Self {
         self.config = config
+        self.completion = completion
+        self.dismissCompletion = onDismiss
         return self
     }
 
-    
     @IBAction func didPressClose(_ sender: UIButton) {
-        
+        dismiss(animated: true, completion: nil)
+        dismissCompletion?()
     }
     
     @IBAction func didPressCrop(_ sender: UIButton) {
-        
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ImagePresenter") as! ImagePresenter
-        let image = croppingView.croppedImage()
-        vc.image = image
-        present(vc, animated: true, completion: nil)
+        if let image = croppingView.croppedImage() {
+            dismiss(animated: true, completion: nil)
+            completion?(image)
+        }
     }
 }
 

@@ -67,6 +67,7 @@
 				78EFAC9D27B52DF600726574 /* CroppingAreaView.swift */,
 				78EFAC9F27B52E5100726574 /* GridView.swift */,
 				7834AC8B27B507D200CF6460 /* BannerCroppingView.swift */,
+				7834AC8727B5039F00CF6460 /* BannerCroppingViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -98,7 +99,6 @@
 				78FDA01527B3C9040036C268 /* Assets.xcassets */,
 				78FDA01727B3C9040036C268 /* LaunchScreen.storyboard */,
 				78FDA01A27B3C9040036C268 /* Info.plist */,
-				7834AC8727B5039F00CF6460 /* BannerCroppingViewController.swift */,
 				7834AC8D27B515A700CF6460 /* File.swift */,
 				78EFAC9827B51F9600726574 /* Utils.swift */,
 			);

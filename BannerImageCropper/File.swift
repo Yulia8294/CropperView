@@ -18,4 +18,25 @@ class ImagePresenter: UIViewController {
         imageView.image = image
     }
     
+    @IBAction func didPressDemoButton(_ sender: UIButton) {
+        
+        var conf = BannerCropperCofiguration(image: UIImage(named: "test2")!)
+               conf.displayGrid = true
+               conf.gridColor = .white
+               conf.cropAreaBorderColor = .white
+               conf.cropButtonCornerRadius = 10
+               conf.closeButtonTint = .darkGray
+               conf.saveButtonBackground = .orange
+               conf.cropperViewCornerRadius = 10
+               conf.cropperViewBackgroundColor = UIColor.black.withAlphaComponent(0.7)
+        
+        let controller = BannerCroppingViewController.initialize(with: conf) { image in
+            self.imageView.image = image
+        } _: {
+            print("dismissed")
+        }
+        
+        controller.modalPresentationStyle = .fullScreen
+        present(controller, animated: true)
+    }
 }

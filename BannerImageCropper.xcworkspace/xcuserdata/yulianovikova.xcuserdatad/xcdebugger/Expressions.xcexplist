@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "AnotherViewController.didPressCrop(_:):AnotherViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "BannerCroppingViewController.didPressCrop(_:):BannerCroppingViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(UIImage)image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BannerCroppingView.layoutSubviews():BannerCroppingView.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
