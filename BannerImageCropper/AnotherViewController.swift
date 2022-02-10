@@ -9,23 +9,18 @@ import UIKit
 
 class AnotherViewController: UIViewController {
 
-    @IBOutlet weak var testView: ImageCropperView!
+    @IBOutlet weak var testView: BannerCroppingView!
     var firstLainch = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var config = BannerCropperCofiguration(image: UIImage(named: "test2")!)
+        config.displayGrid = true
+        config.gridColor = .white
+        config.cropAreaBorderColor = .white
+        testView.configure(with: config)
     }
 
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        if firstLainch {
-            testView.updateMinZoomScaleForSize(view.bounds.size)
-            testView.centerContent()
-            firstLainch = false
-        }
-        
-       
-    }
     
     @IBAction func didPressCrop(_ sender: Any) {
         

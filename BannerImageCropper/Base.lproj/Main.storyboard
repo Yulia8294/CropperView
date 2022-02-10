@@ -32,7 +32,7 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="90X-3c-3bM"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="AcG-GC-7nb"/>
                             </scrollView>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19n-MF-AgD" customClass="BannerCroppingView" customModule="BannerImageCropper" customModuleProvider="target">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19n-MF-AgD" customClass="CroppingAreaView" customModule="BannerImageCropper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="388" width="414" height="120"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -75,7 +75,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFH-cG-a5b" customClass="ImageCropperView" customModule="BannerImageCropper" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFH-cG-a5b" customClass="BannerCroppingView" customModule="BannerImageCropper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyt-tE-D9a">

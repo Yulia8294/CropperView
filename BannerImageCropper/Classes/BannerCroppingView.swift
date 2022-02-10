@@ -7,7 +7,9 @@
 
 import UIKit
 
-class ImageCropperView: UIView {
+class BannerCroppingView: UIView {
+    
+    var conifig: BannerCropperCofiguration?
     
     var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
@@ -16,20 +18,25 @@ class ImageCropperView: UIView {
         scrollView.alwaysBounceVertical = true
         scrollView.showsVerticalScrollIndicator = false
         scrollView.showsHorizontalScrollIndicator = false
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
         return scrollView
     }()
     
     var imageView: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "test2"))
+        let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
-    var bannerView: BannerCroppingView = {
-        let banner = BannerCroppingView()
+    var bannerView: CroppingAreaView = {
+        let banner = CroppingAreaView()
         banner.isUserInteractionEnabled = false
+        banner.translatesAutoresizingMaskIntoConstraints = false
         return banner
     }()
+    
+    //MARK: - Init
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -41,31 +48,44 @@ class ImageCropperView: UIView {
         configure()
     }
     
+    func configure(with configuration: BannerCropperCofiguration) {
+        self.conifig = configuration
+        bannerView.configure(with: CroppingAreaViewModel(gridColor:    configuration.gridColor,
+                                                         displaysGrid: configuration.displayGrid,
+                                                         borderColor:  configuration.cropAreaBorderColor,
+                                                         borderWidth:  configuration.cropAreaBorderWidth))
+        imageView.image = configuration.image
+        setNeedsLayout()
+        layoutIfNeeded()
+    }
+    
     func centerContent() {
-        let height = BannerImageCropper.frame(for: imageView.image!, inImageViewAspectFit: imageView).height
-        let centerOffsetY = (height - scrollView.frame.size.height) / 2 - 60
-        scrollView.contentOffset = CGPoint(x: 0, y: centerOffsetY)
+        guard let image = imageView.image else { return }
+        let height = BannerImageCropper.frame(for: image, inImageViewAspectFit: imageView).height
+        let centerOffsetY = (height - scrollView.frame.size.height) / 2
+        scrollView.setContentOffset(CGPoint(x: 0, y: centerOffsetY), animated: false)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        updateMinZoomScaleForSize(bounds.size)
+        centerContent()
     }
     
     func updateMinZoomScaleForSize(_ size: CGSize) {
         let widthScale = size.width / imageView.bounds.width
         let heightScale = size.height / imageView.bounds.height
         let minScale = min(widthScale, heightScale)
-            
+
         scrollView.minimumZoomScale = minScale
         scrollView.zoomScale = minScale
     }
     
     private func constraintLayout() {
-        
         addSubview(scrollView)
         scrollView.addSubview(imageView)
         addSubview(bannerView)
         scrollView.delegate = self
-        
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        bannerView.translatesAutoresizingMaskIntoConstraints = false
 
         scrollView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         scrollView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
@@ -99,7 +119,7 @@ class ImageCropperView: UIView {
 
 }
 
-extension ImageCropperView: UIScrollViewDelegate {
+extension BannerCroppingView: UIScrollViewDelegate {
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         imageView
@@ -107,8 +127,7 @@ extension ImageCropperView: UIScrollViewDelegate {
 }
 
 // Cropping
-extension ImageCropperView {
-    
+extension BannerCroppingView {
     
     func croppedImage() -> UIImage? {
         let visibleRect = calcVisibleRectForResizeableCropArea()
@@ -125,7 +144,7 @@ extension ImageCropperView {
         var sizeScale = self.imageView.image!.size.width / self.imageView.frame.size.width
         sizeScale *= self.scrollView.zoomScale
         var visibleRect = bannerView.convert(bannerView.bounds, to: imageView)
-        visibleRect = BannerCroppingView.scaleRect(rect: visibleRect, scale: sizeScale)
+        visibleRect = CroppingAreaView.scaleRect(rect: visibleRect, scale: sizeScale)
         return visibleRect
     }
 }

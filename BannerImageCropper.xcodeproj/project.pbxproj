@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		6512C8C53D301D2C688B4462 /* Pods_BannerImageCropper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC040F67C189BC90982975FE /* Pods_BannerImageCropper.framework */; };
 		7834AC8827B5039F00CF6460 /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7834AC8727B5039F00CF6460 /* AnotherViewController.swift */; };
-		7834AC8C27B507D200CF6460 /* ImageCropperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7834AC8B27B507D200CF6460 /* ImageCropperView.swift */; };
+		7834AC8C27B507D200CF6460 /* BannerCroppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7834AC8B27B507D200CF6460 /* BannerCroppingView.swift */; };
 		7834AC8E27B515A700CF6460 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7834AC8D27B515A700CF6460 /* File.swift */; };
 		78EFAC9927B51F9600726574 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EFAC9827B51F9600726574 /* Utils.swift */; };
+		78EFAC9C27B52C0800726574 /* CropperConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EFAC9B27B52C0800726574 /* CropperConfiguration.swift */; };
+		78EFAC9E27B52DF600726574 /* CroppingAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EFAC9D27B52DF600726574 /* CroppingAreaView.swift */; };
+		78EFACA027B52E5100726574 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EFAC9F27B52E5100726574 /* GridView.swift */; };
 		78FDA00D27B3C9030036C268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDA00C27B3C9030036C268 /* AppDelegate.swift */; };
 		78FDA01127B3C9030036C268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDA01027B3C9030036C268 /* ViewController.swift */; };
 		78FDA01427B3C9030036C268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FDA01227B3C9030036C268 /* Main.storyboard */; };
@@ -22,9 +25,12 @@
 /* Begin PBXFileReference section */
 		14F4D933890CC129567C7AC7 /* Pods-BannerImageCropper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BannerImageCropper.release.xcconfig"; path = "Target Support Files/Pods-BannerImageCropper/Pods-BannerImageCropper.release.xcconfig"; sourceTree = "<group>"; };
 		7834AC8727B5039F00CF6460 /* AnotherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
-		7834AC8B27B507D200CF6460 /* ImageCropperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCropperView.swift; sourceTree = "<group>"; };
+		7834AC8B27B507D200CF6460 /* BannerCroppingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCroppingView.swift; sourceTree = "<group>"; };
 		7834AC8D27B515A700CF6460 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		78EFAC9827B51F9600726574 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		78EFAC9B27B52C0800726574 /* CropperConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropperConfiguration.swift; sourceTree = "<group>"; };
+		78EFAC9D27B52DF600726574 /* CroppingAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CroppingAreaView.swift; sourceTree = "<group>"; };
+		78EFAC9F27B52E5100726574 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		78FDA00927B3C9030036C268 /* BannerImageCropper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BannerImageCropper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FDA00C27B3C9030036C268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78FDA01027B3C9030036C268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +65,10 @@
 		78EFAC9A27B52A3B00726574 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				78EFAC9B27B52C0800726574 /* CropperConfiguration.swift */,
+				78EFAC9D27B52DF600726574 /* CroppingAreaView.swift */,
+				78EFAC9F27B52E5100726574 /* GridView.swift */,
+				7834AC8B27B507D200CF6460 /* BannerCroppingView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -92,7 +102,6 @@
 				78FDA01727B3C9040036C268 /* LaunchScreen.storyboard */,
 				78FDA01A27B3C9040036C268 /* Info.plist */,
 				7834AC8727B5039F00CF6460 /* AnotherViewController.swift */,
-				7834AC8B27B507D200CF6460 /* ImageCropperView.swift */,
 				7834AC8D27B515A700CF6460 /* File.swift */,
 				78EFAC9827B51F9600726574 /* Utils.swift */,
 			);
@@ -224,11 +233,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7834AC8E27B515A700CF6460 /* File.swift in Sources */,
-				7834AC8C27B507D200CF6460 /* ImageCropperView.swift in Sources */,
+				7834AC8C27B507D200CF6460 /* BannerCroppingView.swift in Sources */,
 				78FDA01127B3C9030036C268 /* ViewController.swift in Sources */,
 				78FDA00D27B3C9030036C268 /* AppDelegate.swift in Sources */,
+				78EFAC9C27B52C0800726574 /* CropperConfiguration.swift in Sources */,
 				7834AC8827B5039F00CF6460 /* AnotherViewController.swift in Sources */,
 				78EFAC9927B51F9600726574 /* Utils.swift in Sources */,
+				78EFACA027B52E5100726574 /* GridView.swift in Sources */,
+				78EFAC9E27B52DF600726574 /* CroppingAreaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var bannerView: BannerCroppingView!
+    @IBOutlet weak var bannerView: CroppingAreaView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageLeadingConstraint: NSLayoutConstraint!
@@ -21,8 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.delegate = self
-        
-        
+    
     }
     
     private func updateMinZoomScaleForSize(_ size: CGSize) {
@@ -91,31 +90,4 @@ extension ViewController: UIScrollViewDelegate {
     }
 }
 
-class BannerCroppingView: UIView {
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        configure()
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        configure()
-    }
-    
-    
-    static func scaleRect(rect: CGRect, scale: CGFloat) -> CGRect {
-        return CGRect(
-            x: rect.origin.x * scale,
-            y: rect.origin.y * scale,
-            width: rect.size.width * scale,
-            height: rect.size.height * scale)
-    }
-    
-    private func configure() {
-        layer.borderColor = UIColor.orange.cgColor
-        layer.borderWidth = 1
-        backgroundColor = .black.withAlphaComponent(0.4)
-    }
-}
 
