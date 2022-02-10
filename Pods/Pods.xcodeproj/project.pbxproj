@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F62B34B4896C26B48BB30D8D7E3775E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		4E023EFB62970DAC835536ED7AC19C5B /* ImageCropperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57657527DAC3300094E9EFB22AF249 /* ImageCropperPresenter.swift */; };
+		513B2DFD8BE67876A4F49C40F636DCE2 /* ImageCropper.xib in Sources */ = {isa = PBXBuildFile; fileRef = B736E7C7B448022E91C30B812149BA6B /* ImageCropper.xib */; };
+		5E977422B081C3C02768976CB674B0E0 /* ImageCropper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0C32EED4D16B9AED3DABA59194615E /* ImageCropper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79B31C7E3D2C8B0759552CB899ECF310 /* ImageCropperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE46A7F3ED9CE43FD2D68369211FBF3 /* ImageCropperRouter.swift */; };
+		8341C1F21F8CD70DE057C6C6BE403A07 /* Pods-BannerImageCropper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9161EC8DCF099DE344BA2741465762 /* Pods-BannerImageCropper-dummy.m */; };
+		8C55CE179820073AC6587201F3B37A0C /* UIImage+NormalizeOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01B8C5EF4BFD41370E3521EA8C01F78 /* UIImage+NormalizeOrientation.swift */; };
+		9EC5AFFC182C19F861868F8D7905DE92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		A17269AA0103560A3E59392F3FEF5013 /* Pods-BannerImageCropper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 542FBB1985C2EB4C89E3EBD0F257223A /* Pods-BannerImageCropper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A67B32E349B032346AB41A5B1D366B77 /* ImageCropperConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D83786BC89636ECB5A69AF6D7F40EEA /* ImageCropperConfigurator.swift */; };
+		B1EFFB80AFE90F2B60073AC2BF7C713A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		B5876434996033405867371823937583 /* ImageCropperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691EB6E31E23B2A84BD6876B14DB92C2 /* ImageCropperModel.swift */; };
+		D2CBC50DBC90F94AEB8B3844E199B3FC /* ImageCropperConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43CC9E65D7F0A5998505E7B6D6EE4E1 /* ImageCropperConfiguration.swift */; };
+		DD64A8898FE2021916F7B97457CDBBCB /* ImageCropperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C04D627924D9FF88BF1B8C1DF9B21D /* ImageCropperViewController.swift */; };
+		F5550B5259C62D22103DC140D1B230AB /* ImageCropper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A54A96BC43A3B0486E420BB6F323CF7A /* ImageCropper-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B38F82977EA7847F885360AB1E6C575E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E893FA5511208EB53F2A188D6C9B61CF;
+			remoteInfo = ImageCropper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04C04D627924D9FF88BF1B8C1DF9B21D /* ImageCropperViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCropperViewController.swift; path = ImageCropper/Classes/ImageCropperViewController.swift; sourceTree = "<group>"; };
+		0D1316F251C85FD5AD3860CE4C822267 /* Pods-BannerImageCropper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BannerImageCropper-Info.plist"; sourceTree = "<group>"; };
+		0D83786BC89636ECB5A69AF6D7F40EEA /* ImageCropperConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCropperConfigurator.swift; path = ImageCropper/Classes/ImageCropperConfigurator.swift; sourceTree = "<group>"; };
+		32EE6163E661B54C76F2592EC8818B7B /* Pods-BannerImageCropper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BannerImageCropper.debug.xcconfig"; sourceTree = "<group>"; };
+		3A387A1ADA1E7B8A7863DC3C6285CFBB /* Pods-BannerImageCropper-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BannerImageCropper-frameworks.sh"; sourceTree = "<group>"; };
+		419536FCC270B23298C5E35EDA0408EB /* ImageCropper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ImageCropper.modulemap; sourceTree = "<group>"; };
+		41D0D16A71BFE036F455E1FE2CA9C189 /* ImageCropper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageCropper-prefix.pch"; sourceTree = "<group>"; };
+		542FBB1985C2EB4C89E3EBD0F257223A /* Pods-BannerImageCropper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BannerImageCropper-umbrella.h"; sourceTree = "<group>"; };
+		597AE5D4BF212F015D6E21519AC5AAC0 /* ImageCropper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ImageCropper-Info.plist"; sourceTree = "<group>"; };
+		691EB6E31E23B2A84BD6876B14DB92C2 /* ImageCropperModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCropperModel.swift; path = ImageCropper/Classes/ImageCropperModel.swift; sourceTree = "<group>"; };
+		83B3F9AD9C64DD811288937280A7C187 /* ImageCropper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageCropper.release.xcconfig; sourceTree = "<group>"; };
+		8A57657527DAC3300094E9EFB22AF249 /* ImageCropperPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCropperPresenter.swift; path = ImageCropper/Classes/ImageCropperPresenter.swift; sourceTree = "<group>"; };
+		8A866E90B632117CDC4222207B3FD3BC /* Pods-BannerImageCropper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BannerImageCropper.modulemap"; sourceTree = "<group>"; };
+		8A9161EC8DCF099DE344BA2741465762 /* Pods-BannerImageCropper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BannerImageCropper-dummy.m"; sourceTree = "<group>"; };
+		9BED1275B5BC3110EB89D038B13BD4FC /* ImageCropper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageCropper.debug.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A01B8C5EF4BFD41370E3521EA8C01F78 /* UIImage+NormalizeOrientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+NormalizeOrientation.swift"; path = "ImageCropper/Classes/UIImage+NormalizeOrientation.swift"; sourceTree = "<group>"; };
+		A54A96BC43A3B0486E420BB6F323CF7A /* ImageCropper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImageCropper-dummy.m"; sourceTree = "<group>"; };
+		A7666315D22BD710E2019062914549B0 /* ImageCropper */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ImageCropper; path = ImageCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43CC9E65D7F0A5998505E7B6D6EE4E1 /* ImageCropperConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCropperConfiguration.swift; path = ImageCropper/Classes/ImageCropperConfiguration.swift; sourceTree = "<group>"; };
+		B736E7C7B448022E91C30B812149BA6B /* ImageCropper.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ImageCropper.xib; path = ImageCropper/Classes/ImageCropper.xib; sourceTree = "<group>"; };
+		C39E0F105A8A223ADC3102C1727A9EAD /* Pods-BannerImageCropper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BannerImageCropper-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CD0C32EED4D16B9AED3DABA59194615E /* ImageCropper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageCropper-umbrella.h"; sourceTree = "<group>"; };
+		CFDB5104C9C9D7426B4CEA97B894152E /* Pods-BannerImageCropper */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BannerImageCropper"; path = Pods_BannerImageCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F14E84F74ADBE113ACF0BA7F763FD274 /* Pods-BannerImageCropper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BannerImageCropper.release.xcconfig"; sourceTree = "<group>"; };
+		FD85651FA0D33EF453182E6B07EAE885 /* Pods-BannerImageCropper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BannerImageCropper-acknowledgements.plist"; sourceTree = "<group>"; };
+		FFE46A7F3ED9CE43FD2D68369211FBF3 /* ImageCropperRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCropperRouter.swift; path = ImageCropper/Classes/ImageCropperRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5440164D795DB827CBE8F6AC27AC1FA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EFFB80AFE90F2B60073AC2BF7C713A /* Foundation.framework in Frameworks */,
+				1F62B34B4896C26B48BB30D8D7E3775E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF1A2FAC7C357DB2C824888728B687C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EC5AFFC182C19F861868F8D7905DE92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20B8082982CB9379B345AE3C7319BEB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7666315D22BD710E2019062914549B0 /* ImageCropper */,
+				CFDB5104C9C9D7426B4CEA97B894152E /* Pods-BannerImageCropper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6CD702C22E95F0BA8EE3B181E6F01F47 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4F2C5EEA62ED19C5113CB07B0D83888 /* Pods-BannerImageCropper */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9EFF708A976E1CB3C84E068957E0FF5E /* ImageCropper */ = {
+			isa = PBXGroup;
+			children = (
+				B736E7C7B448022E91C30B812149BA6B /* ImageCropper.xib */,
+				B43CC9E65D7F0A5998505E7B6D6EE4E1 /* ImageCropperConfiguration.swift */,
+				0D83786BC89636ECB5A69AF6D7F40EEA /* ImageCropperConfigurator.swift */,
+				691EB6E31E23B2A84BD6876B14DB92C2 /* ImageCropperModel.swift */,
+				8A57657527DAC3300094E9EFB22AF249 /* ImageCropperPresenter.swift */,
+				FFE46A7F3ED9CE43FD2D68369211FBF3 /* ImageCropperRouter.swift */,
+				04C04D627924D9FF88BF1B8C1DF9B21D /* ImageCropperViewController.swift */,
+				A01B8C5EF4BFD41370E3521EA8C01F78 /* UIImage+NormalizeOrientation.swift */,
+				A4334B2FF98E5541A30DAEAD7CD2ED87 /* Support Files */,
+			);
+			name = ImageCropper;
+			path = ImageCropper;
+			sourceTree = "<group>";
+		};
+		A4334B2FF98E5541A30DAEAD7CD2ED87 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				419536FCC270B23298C5E35EDA0408EB /* ImageCropper.modulemap */,
+				A54A96BC43A3B0486E420BB6F323CF7A /* ImageCropper-dummy.m */,
+				597AE5D4BF212F015D6E21519AC5AAC0 /* ImageCropper-Info.plist */,
+				41D0D16A71BFE036F455E1FE2CA9C189 /* ImageCropper-prefix.pch */,
+				CD0C32EED4D16B9AED3DABA59194615E /* ImageCropper-umbrella.h */,
+				9BED1275B5BC3110EB89D038B13BD4FC /* ImageCropper.debug.xcconfig */,
+				83B3F9AD9C64DD811288937280A7C187 /* ImageCropper.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ImageCropper";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				CF470443232FAA2522A70E2E4BBC5AE7 /* Pods */,
+				20B8082982CB9379B345AE3C7319BEB6 /* Products */,
+				6CD702C22E95F0BA8EE3B181E6F01F47 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF470443232FAA2522A70E2E4BBC5AE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EFF708A976E1CB3C84E068957E0FF5E /* ImageCropper */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E4F2C5EEA62ED19C5113CB07B0D83888 /* Pods-BannerImageCropper */ = {
+			isa = PBXGroup;
+			children = (
+				8A866E90B632117CDC4222207B3FD3BC /* Pods-BannerImageCropper.modulemap */,
+				C39E0F105A8A223ADC3102C1727A9EAD /* Pods-BannerImageCropper-acknowledgements.markdown */,
+				FD85651FA0D33EF453182E6B07EAE885 /* Pods-BannerImageCropper-acknowledgements.plist */,
+				8A9161EC8DCF099DE344BA2741465762 /* Pods-BannerImageCropper-dummy.m */,
+				3A387A1ADA1E7B8A7863DC3C6285CFBB /* Pods-BannerImageCropper-frameworks.sh */,
+				0D1316F251C85FD5AD3860CE4C822267 /* Pods-BannerImageCropper-Info.plist */,
+				542FBB1985C2EB4C89E3EBD0F257223A /* Pods-BannerImageCropper-umbrella.h */,
+				32EE6163E661B54C76F2592EC8818B7B /* Pods-BannerImageCropper.debug.xcconfig */,
+				F14E84F74ADBE113ACF0BA7F763FD274 /* Pods-BannerImageCropper.release.xcconfig */,
+			);
+			name = "Pods-BannerImageCropper";
+			path = "Target Support Files/Pods-BannerImageCropper";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C63668B3B1953936DCA3815685802C3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17269AA0103560A3E59392F3FEF5013 /* Pods-BannerImageCropper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB8A28BAB49F8D688B96E7FB2B50B1EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E977422B081C3C02768976CB674B0E0 /* ImageCropper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8879F4F2A78321893258D040C3447F17 /* Pods-BannerImageCropper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF8A2767FEFA4BE7A9012CD028F98C6F /* Build configuration list for PBXNativeTarget "Pods-BannerImageCropper" */;
+			buildPhases = (
+				C63668B3B1953936DCA3815685802C3B /* Headers */,
+				58DBA989B560C6F4CF7ED79B22206114 /* Sources */,
+				6DF1A2FAC7C357DB2C824888728B687C /* Frameworks */,
+				41127A586D5899162B8DCF99AD8E1F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEF091597DA822964DF68E9F6C40D78B /* PBXTargetDependency */,
+			);
+			name = "Pods-BannerImageCropper";
+			productName = Pods_BannerImageCropper;
+			productReference = CFDB5104C9C9D7426B4CEA97B894152E /* Pods-BannerImageCropper */;
+			productType = "com.apple.product-type.framework";
+		};
+		E893FA5511208EB53F2A188D6C9B61CF /* ImageCropper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D04933EE428CA1A4230B613BFDB53A /* Build configuration list for PBXNativeTarget "ImageCropper" */;
+			buildPhases = (
+				EB8A28BAB49F8D688B96E7FB2B50B1EE /* Headers */,
+				1C1059A2F989063FAC5B05649FCF6524 /* Sources */,
+				5440164D795DB827CBE8F6AC27AC1FA9 /* Frameworks */,
+				313EC844ADADBE5A4AC1F47594BD3D18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageCropper;
+			productName = ImageCropper;
+			productReference = A7666315D22BD710E2019062914549B0 /* ImageCropper */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 20B8082982CB9379B345AE3C7319BEB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E893FA5511208EB53F2A188D6C9B61CF /* ImageCropper */,
+				8879F4F2A78321893258D040C3447F17 /* Pods-BannerImageCropper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		313EC844ADADBE5A4AC1F47594BD3D18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41127A586D5899162B8DCF99AD8E1F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C1059A2F989063FAC5B05649FCF6524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				513B2DFD8BE67876A4F49C40F636DCE2 /* ImageCropper.xib in Sources */,
+				F5550B5259C62D22103DC140D1B230AB /* ImageCropper-dummy.m in Sources */,
+				D2CBC50DBC90F94AEB8B3844E199B3FC /* ImageCropperConfiguration.swift in Sources */,
+				A67B32E349B032346AB41A5B1D366B77 /* ImageCropperConfigurator.swift in Sources */,
+				B5876434996033405867371823937583 /* ImageCropperModel.swift in Sources */,
+				4E023EFB62970DAC835536ED7AC19C5B /* ImageCropperPresenter.swift in Sources */,
+				79B31C7E3D2C8B0759552CB899ECF310 /* ImageCropperRouter.swift in Sources */,
+				DD64A8898FE2021916F7B97457CDBBCB /* ImageCropperViewController.swift in Sources */,
+				8C55CE179820073AC6587201F3B37A0C /* UIImage+NormalizeOrientation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58DBA989B560C6F4CF7ED79B22206114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8341C1F21F8CD70DE057C6C6BE403A07 /* Pods-BannerImageCropper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEF091597DA822964DF68E9F6C40D78B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ImageCropper;
+			target = E893FA5511208EB53F2A188D6C9B61CF /* ImageCropper */;
+			targetProxy = B38F82977EA7847F885360AB1E6C575E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACA8FEB3528EFF5078DD0052B76AA12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BED1275B5BC3110EB89D038B13BD4FC /* ImageCropper.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ImageCropper/ImageCropper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageCropper/ImageCropper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ImageCropper/ImageCropper.modulemap";
+				PRODUCT_MODULE_NAME = ImageCropper;
+				PRODUCT_NAME = ImageCropper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DFA42D13759C892484B9262D700EECA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B3F9AD9C64DD811288937280A7C187 /* ImageCropper.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ImageCropper/ImageCropper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageCropper/ImageCropper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ImageCropper/ImageCropper.modulemap";
+				PRODUCT_MODULE_NAME = ImageCropper;
+				PRODUCT_NAME = ImageCropper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E35AFD9335E71EB7AE5385647522DCBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32EE6163E661B54C76F2592EC8818B7B /* Pods-BannerImageCropper.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BannerImageCropper/Pods-BannerImageCropper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BannerImageCropper/Pods-BannerImageCropper.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E85FE1F1261967FB902B1921F0142792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F14E84F74ADBE113ACF0BA7F763FD274 /* Pods-BannerImageCropper.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BannerImageCropper/Pods-BannerImageCropper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BannerImageCropper/Pods-BannerImageCropper.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4214E6946993DF02ED98D89047C64016 /* Debug */,
+				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D04933EE428CA1A4230B613BFDB53A /* Build configuration list for PBXNativeTarget "ImageCropper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ACA8FEB3528EFF5078DD0052B76AA12 /* Debug */,
+				DFA42D13759C892484B9262D700EECA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF8A2767FEFA4BE7A9012CD028F98C6F /* Build configuration list for PBXNativeTarget "Pods-BannerImageCropper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E35AFD9335E71EB7AE5385647522DCBA /* Debug */,
+				E85FE1F1261967FB902B1921F0142792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6512C8C53D301D2C688B4462 /* Pods_BannerImageCropper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC040F67C189BC90982975FE /* Pods_BannerImageCropper.framework */; };
+		7834AC8827B5039F00CF6460 /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7834AC8727B5039F00CF6460 /* AnotherViewController.swift */; };
+		7834AC8C27B507D200CF6460 /* ImageCropperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7834AC8B27B507D200CF6460 /* ImageCropperView.swift */; };
+		7834AC8E27B515A700CF6460 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7834AC8D27B515A700CF6460 /* File.swift */; };
+		78EFAC9927B51F9600726574 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EFAC9827B51F9600726574 /* Utils.swift */; };
 		78FDA00D27B3C9030036C268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDA00C27B3C9030036C268 /* AppDelegate.swift */; };
-		78FDA00F27B3C9030036C268 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDA00E27B3C9030036C268 /* SceneDelegate.swift */; };
 		78FDA01127B3C9030036C268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDA01027B3C9030036C268 /* ViewController.swift */; };
 		78FDA01427B3C9030036C268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FDA01227B3C9030036C268 /* Main.storyboard */; };
 		78FDA01627B3C9040036C268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78FDA01527B3C9040036C268 /* Assets.xcassets */; };
@@ -16,14 +20,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14F4D933890CC129567C7AC7 /* Pods-BannerImageCropper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BannerImageCropper.release.xcconfig"; path = "Target Support Files/Pods-BannerImageCropper/Pods-BannerImageCropper.release.xcconfig"; sourceTree = "<group>"; };
+		7834AC8727B5039F00CF6460 /* AnotherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
+		7834AC8B27B507D200CF6460 /* ImageCropperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCropperView.swift; sourceTree = "<group>"; };
+		7834AC8D27B515A700CF6460 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		78EFAC9827B51F9600726574 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		78FDA00927B3C9030036C268 /* BannerImageCropper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BannerImageCropper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FDA00C27B3C9030036C268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		78FDA00E27B3C9030036C268 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		78FDA01027B3C9030036C268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78FDA01327B3C9030036C268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78FDA01527B3C9040036C268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78FDA01827B3C9040036C268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78FDA01A27B3C9040036C268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FEF0D26580CB0994EB48702 /* Pods-BannerImageCropper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BannerImageCropper.debug.xcconfig"; path = "Target Support Files/Pods-BannerImageCropper/Pods-BannerImageCropper.debug.xcconfig"; sourceTree = "<group>"; };
+		EC040F67C189BC90982975FE /* Pods_BannerImageCropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BannerImageCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6512C8C53D301D2C688B4462 /* Pods_BannerImageCropper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71ADA36C50D33E62A7BE15DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC040F67C189BC90982975FE /* Pods_BannerImageCropper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78EFAC9A27B52A3B00726574 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		78FDA00027B3C9020036C268 = {
 			isa = PBXGroup;
 			children = (
 				78FDA00B27B3C9030036C268 /* BannerImageCropper */,
 				78FDA00A27B3C9030036C268 /* Products */,
+				903AFAA4C774F8C6A763776E /* Pods */,
+				71ADA36C50D33E62A7BE15DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,28 @@
 		78FDA00B27B3C9030036C268 /* BannerImageCropper */ = {
 			isa = PBXGroup;
 			children = (
+				78EFAC9A27B52A3B00726574 /* Classes */,
 				78FDA00C27B3C9030036C268 /* AppDelegate.swift */,
-				78FDA00E27B3C9030036C268 /* SceneDelegate.swift */,
 				78FDA01027B3C9030036C268 /* ViewController.swift */,
 				78FDA01227B3C9030036C268 /* Main.storyboard */,
 				78FDA01527B3C9040036C268 /* Assets.xcassets */,
 				78FDA01727B3C9040036C268 /* LaunchScreen.storyboard */,
 				78FDA01A27B3C9040036C268 /* Info.plist */,
+				7834AC8727B5039F00CF6460 /* AnotherViewController.swift */,
+				7834AC8B27B507D200CF6460 /* ImageCropperView.swift */,
+				7834AC8D27B515A700CF6460 /* File.swift */,
+				78EFAC9827B51F9600726574 /* Utils.swift */,
 			);
 			path = BannerImageCropper;
+			sourceTree = "<group>";
+		};
+		903AFAA4C774F8C6A763776E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF0D26580CB0994EB48702 /* Pods-BannerImageCropper.debug.xcconfig */,
+				14F4D933890CC129567C7AC7 /* Pods-BannerImageCropper.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78FDA01D27B3C9040036C268 /* Build configuration list for PBXNativeTarget "BannerImageCropper" */;
 			buildPhases = (
+				18E24660FCD982CB8654DF5B /* [CP] Check Pods Manifest.lock */,
 				78FDA00527B3C9030036C268 /* Sources */,
 				78FDA00627B3C9030036C268 /* Frameworks */,
 				78FDA00727B3C9030036C268 /* Resources */,
+				3FD2128D29F834459807517F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +176,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18E24660FCD982CB8654DF5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BannerImageCropper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FD2128D29F834459807517F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BannerImageCropper/Pods-BannerImageCropper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BannerImageCropper/Pods-BannerImageCropper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BannerImageCropper/Pods-BannerImageCropper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		78FDA00527B3C9030036C268 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7834AC8E27B515A700CF6460 /* File.swift in Sources */,
+				7834AC8C27B507D200CF6460 /* ImageCropperView.swift in Sources */,
 				78FDA01127B3C9030036C268 /* ViewController.swift in Sources */,
 				78FDA00D27B3C9030036C268 /* AppDelegate.swift in Sources */,
-				78FDA00F27B3C9030036C268 /* SceneDelegate.swift in Sources */,
+				7834AC8827B5039F00CF6460 /* AnotherViewController.swift in Sources */,
+				78EFAC9927B51F9600726574 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +372,7 @@
 		};
 		78FDA01E27B3C9040036C268 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FEF0D26580CB0994EB48702 /* Pods-BannerImageCropper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +401,7 @@
 		};
 		78FDA01F27B3C9040036C268 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14F4D933890CC129567C7AC7 /* Pods-BannerImageCropper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

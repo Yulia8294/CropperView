@@ -1,0 +1,16 @@
+PODS:
+  - ImageCropper (0.1.5.1)
+
+DEPENDENCIES:
+  - ImageCropper
+
+SPEC REPOS:
+  trunk:
+    - ImageCropper
+
+SPEC CHECKSUMS:
+  ImageCropper: 031f4dc49908419529d56cdedaea7111cd823c3d
+
+PODFILE CHECKSUM: 483dfe0558ec93035e1b9e6d74b365f96b16e960
+
+COCOAPODS: 1.11.2
