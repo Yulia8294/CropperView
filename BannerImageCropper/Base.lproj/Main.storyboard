@@ -8,65 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BannerImageCropper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMi-WI-hee">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test2" translatesAutoresizingMaskIntoConstraints="NO" id="zuE-0U-MBD">
-                                        <rect key="frame" x="0.0" y="0.0" width="1202" height="1280"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="zuE-0U-MBD" secondAttribute="trailing" id="I23-S9-cHm"/>
-                                    <constraint firstItem="zuE-0U-MBD" firstAttribute="leading" secondItem="QMi-WI-hee" secondAttribute="leading" id="PCG-YX-KQC"/>
-                                    <constraint firstAttribute="bottom" secondItem="zuE-0U-MBD" secondAttribute="bottom" id="cHg-CS-FAR"/>
-                                    <constraint firstItem="zuE-0U-MBD" firstAttribute="top" secondItem="QMi-WI-hee" secondAttribute="top" id="tIS-5v-kR3"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="90X-3c-3bM"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="AcG-GC-7nb"/>
-                            </scrollView>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19n-MF-AgD" customClass="CroppingAreaView" customModule="BannerImageCropper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="388" width="414" height="120"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="NZd-Un-VJI"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="QMi-WI-hee" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3W6-ZY-QHv"/>
-                            <constraint firstItem="19n-MF-AgD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5gp-BK-q9z"/>
-                            <constraint firstItem="QMi-WI-hee" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7F3-rF-ERJ"/>
-                            <constraint firstItem="19n-MF-AgD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8MJ-fc-f1B"/>
-                            <constraint firstItem="19n-MF-AgD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QrX-nv-8fc"/>
-                            <constraint firstItem="QMi-WI-hee" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="X1w-jo-9MF"/>
-                            <constraint firstItem="QMi-WI-hee" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zh0-4G-2Hy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="19n-MF-AgD" secondAttribute="trailing" id="etA-KX-VgU"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="bannerView" destination="19n-MF-AgD" id="Av1-Ga-f37"/>
-                        <outlet property="imageBottomConstraint" destination="cHg-CS-FAR" id="zJN-G2-Y4A"/>
-                        <outlet property="imageLeadingConstraint" destination="PCG-YX-KQC" id="ZJ2-by-z4C"/>
-                        <outlet property="imageTopConstraint" destination="tIS-5v-kR3" id="bRG-Rp-FjM"/>
-                        <outlet property="imageTrailingConstraint" destination="I23-S9-cHm" id="BIZ-cI-hrn"/>
-                        <outlet property="imageView" destination="zuE-0U-MBD" id="1Oh-FD-0NQ"/>
-                        <outlet property="scrollView" destination="QMi-WI-hee" id="QQx-bE-UjI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="88.392857142857139"/>
-        </scene>
         <!--Another View Controller-->
         <scene sceneID="wbw-eL-6Ah">
             <objects>
@@ -109,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sD7-0z-4jF" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939.13043478260875" y="88.392857142857139"/>
+            <point key="canvasLocation" x="223" y="87"/>
         </scene>
         <!--Image Presenter-->
         <scene sceneID="2VL-kb-typ">
@@ -138,11 +79,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SpI-rM-XSR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1755" y="80"/>
+            <point key="canvasLocation" x="1013" y="86"/>
         </scene>
     </scenes>
     <resources>
-        <image name="test2" width="1202" height="1280"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -16,7 +16,6 @@
 		78EFAC9E27B52DF600726574 /* CroppingAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EFAC9D27B52DF600726574 /* CroppingAreaView.swift */; };
 		78EFACA027B52E5100726574 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EFAC9F27B52E5100726574 /* GridView.swift */; };
 		78FDA00D27B3C9030036C268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDA00C27B3C9030036C268 /* AppDelegate.swift */; };
-		78FDA01127B3C9030036C268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDA01027B3C9030036C268 /* ViewController.swift */; };
 		78FDA01427B3C9030036C268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FDA01227B3C9030036C268 /* Main.storyboard */; };
 		78FDA01627B3C9040036C268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78FDA01527B3C9040036C268 /* Assets.xcassets */; };
 		78FDA01927B3C9040036C268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FDA01727B3C9040036C268 /* LaunchScreen.storyboard */; };
@@ -33,7 +32,6 @@
 		78EFAC9F27B52E5100726574 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		78FDA00927B3C9030036C268 /* BannerImageCropper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BannerImageCropper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FDA00C27B3C9030036C268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		78FDA01027B3C9030036C268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78FDA01327B3C9030036C268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78FDA01527B3C9040036C268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78FDA01827B3C9040036C268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 			children = (
 				78EFAC9A27B52A3B00726574 /* Classes */,
 				78FDA00C27B3C9030036C268 /* AppDelegate.swift */,
-				78FDA01027B3C9030036C268 /* ViewController.swift */,
 				78FDA01227B3C9030036C268 /* Main.storyboard */,
 				78FDA01527B3C9040036C268 /* Assets.xcassets */,
 				78FDA01727B3C9040036C268 /* LaunchScreen.storyboard */,
@@ -234,7 +231,6 @@
 			files = (
 				7834AC8E27B515A700CF6460 /* File.swift in Sources */,
 				7834AC8C27B507D200CF6460 /* BannerCroppingView.swift in Sources */,
-				78FDA01127B3C9030036C268 /* ViewController.swift in Sources */,
 				78FDA00D27B3C9030036C268 /* AppDelegate.swift in Sources */,
 				78EFAC9C27B52C0800726574 /* CropperConfiguration.swift in Sources */,
 				7834AC8827B5039F00CF6460 /* AnotherViewController.swift in Sources */,
