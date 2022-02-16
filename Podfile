@@ -6,7 +6,7 @@ target 'BannerImageCropper' do
   use_frameworks!
 
   # Pods for BannerImageCropper
-pod 'ImageCropper'
+pod 'BannerCropper'
 
 
 end

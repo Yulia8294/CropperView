@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4864" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Banner Cropping View Controller-->
+        <scene sceneID="wbw-eL-6Ah">
+            <objects>
+                <viewController storyboardIdentifier="BannerCroppingViewController" id="VtQ-nL-1MS" customClass="BannerCroppingViewController" customModule="BannerCropper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="476-gy-Rzl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oel-l9-fa0" userLabel="BarView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CxL-dD-qVN">
+                                        <rect key="frame" x="16" y="55" width="382" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ff8-ET-MeY">
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Close"/>
+                                                <connections>
+                                                    <action selector="didPressClose:" destination="VtQ-nL-1MS" eventType="touchUpInside" id="aJv-di-aoh"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47b-Zh-MNY">
+                                                <rect key="frame" x="193.5" y="30" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpd-ON-Hi3">
+                                                <rect key="frame" x="348" y="0.0" width="34" height="30"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Crop"/>
+                                                <connections>
+                                                    <action selector="didPressCrop:" destination="VtQ-nL-1MS" eventType="touchUpInside" id="rtw-Pe-5YU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRG-4l-vgk">
+                                        <rect key="frame" x="0.0" y="99" width="414" height="1"/>
+                                        <color key="backgroundColor" systemColor="separatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="fwQ-uw-b6z"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gRG-4l-vgk" secondAttribute="bottom" id="0xI-8D-F9F"/>
+                                    <constraint firstAttribute="trailing" secondItem="CxL-dD-qVN" secondAttribute="trailing" constant="16" id="3iw-NC-zwq"/>
+                                    <constraint firstAttribute="bottom" secondItem="CxL-dD-qVN" secondAttribute="bottom" constant="15" id="4Qk-Bg-zkG"/>
+                                    <constraint firstAttribute="trailing" secondItem="gRG-4l-vgk" secondAttribute="trailing" id="IOr-i9-Nnv"/>
+                                    <constraint firstItem="CxL-dD-qVN" firstAttribute="leading" secondItem="oel-l9-fa0" secondAttribute="leading" constant="16" id="Rni-f8-ukg"/>
+                                    <constraint firstAttribute="height" constant="100" id="TGS-Iq-s6F"/>
+                                    <constraint firstItem="gRG-4l-vgk" firstAttribute="leading" secondItem="oel-l9-fa0" secondAttribute="leading" id="eMk-J8-oyi"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFH-cG-a5b" customClass="BannerCroppingView" customModule="BannerCropper" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="100" width="414" height="796"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SGa-j6-YN9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oel-l9-fa0" firstAttribute="top" secondItem="476-gy-Rzl" secondAttribute="top" id="5kz-F3-uoQ"/>
+                            <constraint firstAttribute="bottom" secondItem="KFH-cG-a5b" secondAttribute="bottom" id="JgS-gL-uhJ"/>
+                            <constraint firstItem="SGa-j6-YN9" firstAttribute="trailing" secondItem="oel-l9-fa0" secondAttribute="trailing" id="PE8-Sf-g3L"/>
+                            <constraint firstItem="SGa-j6-YN9" firstAttribute="trailing" secondItem="KFH-cG-a5b" secondAttribute="trailing" id="SBa-Aj-67G"/>
+                            <constraint firstItem="KFH-cG-a5b" firstAttribute="leading" secondItem="SGa-j6-YN9" secondAttribute="leading" id="tUJ-aT-XXh"/>
+                            <constraint firstItem="KFH-cG-a5b" firstAttribute="top" secondItem="oel-l9-fa0" secondAttribute="bottom" id="vh9-iJ-Psi"/>
+                            <constraint firstItem="oel-l9-fa0" firstAttribute="leading" secondItem="SGa-j6-YN9" secondAttribute="leading" id="zYn-GQ-ifH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="Ff8-ET-MeY" id="6So-n5-lqH"/>
+                        <outlet property="cropButton" destination="Xpd-ON-Hi3" id="UZK-xe-fNF"/>
+                        <outlet property="croppingView" destination="KFH-cG-a5b" id="tNe-UW-ZFO"/>
+                        <outlet property="separatorView" destination="gRG-4l-vgk" id="b4S-al-vZa"/>
+                        <outlet property="titleLabel" destination="47b-Zh-MNY" id="pDj-pq-yFL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sD7-0z-4jF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.73913043478262" y="86.383928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

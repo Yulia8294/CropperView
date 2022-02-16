@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-BannerImageCropper/Pods-BannerImageCropper-frameworks.sh
-${BUILT_PRODUCTS_DIR}/ImageCropper/ImageCropper.framework
+${BUILT_PRODUCTS_DIR}/BannerCropper/BannerCropper.framework

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double ImageCropperVersionNumber;
-FOUNDATION_EXPORT const unsigned char ImageCropperVersionString[];
+FOUNDATION_EXPORT double BannerCropperVersionNumber;
+FOUNDATION_EXPORT const unsigned char BannerCropperVersionString[];
 

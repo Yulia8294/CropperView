@@ -1,16 +1,16 @@
 PODS:
-  - ImageCropper (0.1.5.1)
+  - BannerCropper (0.1.7)
 
 DEPENDENCIES:
-  - ImageCropper
+  - BannerCropper
 
 SPEC REPOS:
   trunk:
-    - ImageCropper
+    - BannerCropper
 
 SPEC CHECKSUMS:
-  ImageCropper: 031f4dc49908419529d56cdedaea7111cd823c3d
+  BannerCropper: 11dfc4531fa38a97dcbc51568674a1bc3510892b
 
-PODFILE CHECKSUM: 483dfe0558ec93035e1b9e6d74b365f96b16e960
+PODFILE CHECKSUM: 2bff9eb6577ec240b56f1eb6714d27533d4c9125
 
 COCOAPODS: 1.11.2

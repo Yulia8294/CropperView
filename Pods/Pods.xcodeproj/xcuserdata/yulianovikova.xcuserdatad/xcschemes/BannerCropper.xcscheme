@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E893FA5511208EB53F2A188D6C9B61CF"
-               BuildableName = "ImageCropper.framework"
-               BlueprintName = "ImageCropper"
+               BlueprintIdentifier = "730E679213DE2BE44E4B0DF0C79FC54B"
+               BuildableName = "BannerCropper.framework"
+               BlueprintName = "BannerCropper"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
